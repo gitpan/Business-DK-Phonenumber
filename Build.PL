@@ -1,6 +1,6 @@
 # Build.PL for Business-DK-Phonenumber
 
-# $Id: Build.PL,v 1.2 2006/02/20 21:50:41 jonasbn Exp $
+# $Id: Build.PL 6308 2009-07-01 11:14:40Z jonasbn $
 
 use Module::Build;
 my $build = Module::Build->new(
@@ -13,13 +13,23 @@ my $build = Module::Build->new(
     create_readme        => 1,
     recursive_test_files => 1,
     build_requires       => {
-        'Test::More'     => '0',    #core
-        'Test::Taint'    => '0',
-        'Taint::Runtime' => '0',
+        'Test::More'          => '0',    #core
+        'Test::Taint'         => '0',
+        'Taint::Runtime'      => '0',
+        'Data::FormValidator' => '0',
+        'Test::Exception'     => '0',
     },
     requires => {
-        'Exporter' => '0',          #core
-        'Carp'     => '0',          #core
+        'Exporter' => '0',               #core
+        'Carp'     => '0',               #core
+    },
+    meta_merge => {
+        resources => {
+            homepage => 'http://logicLAB.jira.com/browse/BDKPHN',
+            bugtracker =>
+                'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber',
+            repository => 'http://logicLAB.jira.com/svn/BDKPHN',
+        }
     },
 );
 $build->create_build_script();

@@ -1,23 +1,28 @@
 ---
 name: Business-DK-Phonenumber
-version: 0.01
+version: 0.02
 author:
   - 'Jonas B. Nielsen, (jonasbn) <jonasbn@cpan.org>'
 abstract: Module to validate and format Danish telephonenumbers
 license: artistic
 resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber
+  homepage: http://logicLAB.jira.com/browse/BDKPHN
   license: http://opensource.org/licenses/artistic-license.php
+  repository: http://logicLAB.jira.com/svn/BDKPHN
 requires:
   Carp: 0
   Exporter: 0
 build_requires:
+  Data::FormValidator: 0
   Taint::Runtime: 0
+  Test::Exception: 0
   Test::More: 0
   Test::Taint: 0
 provides:
   Business::DK::Phonenumber:
     file: lib/Business/DK/Phonenumber.pm
-    version: 0.01
+    version: 0.02
   Class::Business::DK::Phonenumber:
     file: lib/Class/Business/DK/Phonenumber.pm
     version: 0.01
