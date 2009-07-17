@@ -10,6 +10,7 @@ META.yml
 prototypes/sprintf.pl
 README
 t/00.load.t
+t/BDKPHN-4.t
 t/Business/DK/Phonenumber/generate.t
 t/Business/DK/Phonenumber/render.t
 t/Business/DK/Phonenumber/validate.t
@@ -24,3 +25,4 @@ t/kwalitee.t
 t/perlcriticrc
 t/pod-coverage.t
 t/pod.t
+t/prerequisites.t

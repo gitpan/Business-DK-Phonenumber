@@ -1,6 +1,6 @@
 # Build.PL for Business-DK-Phonenumber
 
-# $Id: Build.PL 6308 2009-07-01 11:14:40Z jonasbn $
+# $Id: Build.PL 6320 2009-07-16 15:08:53Z jonasbn $
 
 use Module::Build;
 my $build = Module::Build->new(
@@ -18,6 +18,9 @@ my $build = Module::Build->new(
         'Taint::Runtime'      => '0',
         'Data::FormValidator' => '0',
         'Test::Exception'     => '0',
+		'Test::Kwalitee'     => '0',
+		'Test::Perl::Critic'     => '0',
+		'Test::Prereq::Build'     => '0',
     },
     requires => {
         'Exporter' => '0',               #core

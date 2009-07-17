@@ -1,6 +1,6 @@
 ---
 name: Business-DK-Phonenumber
-version: 0.02
+version: 0.03
 author:
   - 'Jonas B. Nielsen, (jonasbn) <jonasbn@cpan.org>'
 abstract: Module to validate and format Danish telephonenumbers
@@ -17,12 +17,15 @@ build_requires:
   Data::FormValidator: 0
   Taint::Runtime: 0
   Test::Exception: 0
+  Test::Kwalitee: 0
   Test::More: 0
+  Test::Perl::Critic: 0
+  Test::Prereq::Build: 0
   Test::Taint: 0
 provides:
   Business::DK::Phonenumber:
     file: lib/Business/DK/Phonenumber.pm
-    version: 0.02
+    version: 0.03
   Class::Business::DK::Phonenumber:
     file: lib/Class/Business/DK/Phonenumber.pm
     version: 0.01

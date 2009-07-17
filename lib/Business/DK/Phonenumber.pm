@@ -1,6 +1,6 @@
 package Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 6310 2009-07-01 12:25:56Z jonasbn $
+# $Id: Phonenumber.pm 6323 2009-07-17 17:27:49Z jonasbn $
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use vars qw($VERSION @EXPORT_OK);
 use Carp qw(croak);
 use base qw(Exporter);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 @EXPORT_OK
     = qw(validate render generate validate_template TRUE FALSE DK_PREFIX  DEFAULT_TEMPLATE);
 
@@ -33,7 +33,7 @@ sub validate {
             (?:\+)(?:45)(?:\d{8})| #+4512345678
             (?:45)(?:\d{8})|       #4512345678
             (?:\d{8})              #12345678
-            )\b}sgmx
+            )\z}sgmx
         )
     {
         return TRUE;
