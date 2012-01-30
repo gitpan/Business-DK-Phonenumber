@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $Id: BDKPHN-4.t 6322 2009-07-17 15:56:08Z jonasbn $
+# $Id: BDKPHN-4.t 7836 2012-01-30 17:12:10Z jonasbn $
 
 use strict;
 use Test::More tests => 4;

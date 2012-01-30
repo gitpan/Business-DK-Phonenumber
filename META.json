@@ -1,0 +1,69 @@
+{
+   "abstract" : "Module to validate and format Danish telephonenumbers",
+   "author" : [
+      "Jonas B. Nielsen, (jonasbn) <jonasbn@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930",
+   "license" : [
+      "artistic_1"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Business-DK-Phonenumber",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Data::FormValidator" : 0,
+            "Taint::Runtime" : 0,
+            "Test::Exception" : 0,
+            "Test::Kwalitee" : 0,
+            "Test::More" : 0,
+            "Test::Perl::Critic" : 0,
+            "Test::Prereq::Build" : 0,
+            "Test::Taint" : 0
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : 0,
+            "Exporter" : 0
+         }
+      }
+   },
+   "provides" : {
+      "Business::DK::Phonenumber" : {
+         "file" : "lib/Business/DK/Phonenumber.pm",
+         "version" : "0.04"
+      },
+      "Class::Business::DK::Phonenumber" : {
+         "file" : "lib/Class/Business/DK/Phonenumber.pm",
+         "version" : "0.01"
+      },
+      "Data::FormValidator::Constraints::Business::DK::Phonenumber" : {
+         "file" : "lib/Data/FormValidator/Constraints/Business/DK/Phonenumber.pm",
+         "version" : 0
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber"
+      },
+      "homepage" : "http://logicLAB.jira.com/browse/BDKPHN",
+      "license" : [
+         "http://www.perlfoundation.org/artistic_license_1_0"
+      ],
+      "repository" : {
+         "url" : "http://logicLAB.jira.com/svn/BDKPHN"
+      }
+   },
+   "version" : "0.04"
+}

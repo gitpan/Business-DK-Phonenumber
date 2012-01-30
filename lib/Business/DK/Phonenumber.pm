@@ -1,6 +1,6 @@
 package Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 6323 2009-07-17 17:27:49Z jonasbn $
+# $Id: Phonenumber.pm 7840 2012-01-30 17:53:34Z jonasbn $
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use vars qw($VERSION @EXPORT_OK);
 use Carp qw(croak);
 use base qw(Exporter);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 @EXPORT_OK
     = qw(validate render generate validate_template TRUE FALSE DK_PREFIX  DEFAULT_TEMPLATE);
 
@@ -62,14 +62,16 @@ sub render {
                 Class::Business::DK::Phonenumber::validate_template(
                     $template);
             }
-        }
-
-        $template = $template || $self->{template} || DEFAULT_TEMPLATE;
+        } else {
+			$template = $self->{template} || DEFAULT_TEMPLATE;
+		}
 
         if ( not $phonenumber ) {
             $phonenumber = $self->{phonenumber};
         }
     }
+
+	$phonenumber =~ s/\s//sxmg;
 
     my @subs = $template =~ m/%(\d)+d/sxmg;
 

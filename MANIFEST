@@ -6,10 +6,12 @@ lib/Class/Business/DK/Phonenumber.pm
 lib/Data/FormValidator/Constraints/Business/DK/Phonenumber.pm
 Makefile.PL
 MANIFEST			This list of files
+META.json
 META.yml
 prototypes/sprintf.pl
 README
 t/00.load.t
+t/BDKPHN-10.t
 t/BDKPHN-4.t
 t/Business/DK/Phonenumber/generate.t
 t/Business/DK/Phonenumber/render.t
