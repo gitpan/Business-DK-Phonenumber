@@ -4,7 +4,7 @@
       "Jonas B. Nielsen, (jonasbn) <jonasbn@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "artistic_1"
    ],
@@ -41,7 +41,7 @@
    "provides" : {
       "Business::DK::Phonenumber" : {
          "file" : "lib/Business/DK/Phonenumber.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       },
       "Class::Business::DK::Phonenumber" : {
          "file" : "lib/Class/Business/DK/Phonenumber.pm",
@@ -65,5 +65,5 @@
          "url" : "http://logicLAB.jira.com/svn/BDKPHN"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }

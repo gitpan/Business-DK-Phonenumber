@@ -1,6 +1,6 @@
 package Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 7840 2012-01-30 17:53:34Z jonasbn $
+# $Id: Phonenumber.pm 7902 2012-04-11 10:38:45Z jonasbn $
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use vars qw($VERSION @EXPORT_OK);
 use Carp qw(croak);
 use base qw(Exporter);
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 @EXPORT_OK
     = qw(validate render generate validate_template TRUE FALSE DK_PREFIX  DEFAULT_TEMPLATE);
 
