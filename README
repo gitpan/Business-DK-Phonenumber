@@ -138,12 +138,15 @@ SEE ALSO
         interface which is easy to use.
 
     Class::Business::DK::Phonenumber
+        An OOP approach to regarding a Danish phone number as an object
+
     Data::FormValidator::Constraints::Business::DK::Phonenumber
+        Wrapper for integrating with Data::FormValidator
 
 BUG REPORTING
     Please report issues via CPAN RT:
 
-    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber
+    <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber>
 
     or by sending mail to
 
@@ -160,7 +163,7 @@ AUTHOR
     Jonas B. Nielsen, (jonasbn) - "<jonasbn@cpan.org>"
 
 COPYRIGHT
-    Business-DK-Phonenumber is (C) by Jonas B. Nielsen, (jonasbn) 2008-2009
+    Business-DK-Phonenumber is (C) by Jonas B. Nielsen, (jonasbn) 2008-2010
 
 LICENSE
     Business-DK-Phonenumber is released under the artistic license

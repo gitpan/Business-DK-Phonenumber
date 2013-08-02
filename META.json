@@ -4,7 +4,7 @@
       "Jonas B. Nielsen, (jonasbn) <jonasbn@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Build version 0.4005, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "artistic_1"
    ],
@@ -16,32 +16,32 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Data::FormValidator" : 0,
-            "Taint::Runtime" : 0,
-            "Test::Exception" : 0,
-            "Test::Kwalitee" : 0,
-            "Test::More" : 0,
-            "Test::Perl::Critic" : 0,
-            "Test::Prereq::Build" : 0,
-            "Test::Taint" : 0
+            "Data::FormValidator" : "0",
+            "Taint::Runtime" : "0",
+            "Test::Exception" : "0",
+            "Test::Kwalitee" : "0",
+            "Test::More" : "0",
+            "Test::Perl::Critic" : "0",
+            "Test::Prereq::Build" : "0",
+            "Test::Taint" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build" : "0.40"
          }
       },
       "runtime" : {
          "requires" : {
-            "Carp" : 0,
-            "Exporter" : 0
+            "Carp" : "0",
+            "Exporter" : "0"
          }
       }
    },
    "provides" : {
       "Business::DK::Phonenumber" : {
          "file" : "lib/Business/DK/Phonenumber.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       },
       "Class::Business::DK::Phonenumber" : {
          "file" : "lib/Class/Business/DK/Phonenumber.pm",
@@ -49,7 +49,7 @@
       },
       "Data::FormValidator::Constraints::Business::DK::Phonenumber" : {
          "file" : "lib/Data/FormValidator/Constraints/Business/DK/Phonenumber.pm",
-         "version" : 0
+         "version" : "0.01"
       }
    },
    "release_status" : "stable",
@@ -65,5 +65,5 @@
          "url" : "http://logicLAB.jira.com/svn/BDKPHN"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }

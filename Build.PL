@@ -1,6 +1,6 @@
 # Build.PL for Business-DK-Phonenumber
 
-# $Id: Build.PL 7846 2012-02-07 09:29:28Z jonasbn $
+# $Id: Build.PL 7705 2011-06-07 10:50:48Z jonasbn $
 
 use Module::Build;
 my $build = Module::Build->new(
@@ -9,7 +9,7 @@ my $build = Module::Build->new(
     dist_version_from => 'lib/Business/DK/Phonenumber.pm',
     dist_abstract => 'Module to validate and format Danish telephonenumbers',
     license       => 'artistic',
-    create_makefile_pl   => 'passthrough',
+    create_makefile_pl   => 'traditional',
     create_readme        => 1,
     recursive_test_files => 1,
     build_requires       => {

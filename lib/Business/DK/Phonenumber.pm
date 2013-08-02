@@ -1,6 +1,6 @@
 package Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 7902 2012-04-11 10:38:45Z jonasbn $
+# $Id: Phonenumber.pm 8199 2013-08-02 09:35:48Z jonasbn $
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use vars qw($VERSION @EXPORT_OK);
 use Carp qw(croak);
 use base qw(Exporter);
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 @EXPORT_OK
     = qw(validate render generate validate_template TRUE FALSE DK_PREFIX  DEFAULT_TEMPLATE);
 
@@ -30,7 +30,7 @@ sub validate {
 
     if ($phonenumber =~ m{
             \A(
-            (?:\+)(?:45)(?:\d{8})| #+4512345678
+            (?:[+])(?:45)(?:\d{8})| #+4512345678
             (?:45)(?:\d{8})|       #4512345678
             (?:\d{8})              #12345678
             )\z}sgmx
@@ -335,7 +335,11 @@ which is easy to use.
 
 =item L<Class::Business::DK::Phonenumber>
 
+An OOP approach to regarding a Danish phone number as an object
+
 =item L<Data::FormValidator::Constraints::Business::DK::Phonenumber>
+
+Wrapper for integrating with L<Data::FormValidator>
 
 =back
 
@@ -343,7 +347,7 @@ which is easy to use.
 
 Please report issues via CPAN RT:
 
-http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Business-DK-Phonenumber>
 
 or by sending mail to
 
@@ -362,7 +366,7 @@ Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Business-DK-Phonenumber is (C) by Jonas B. Nielsen, (jonasbn) 2008-2009
+Business-DK-Phonenumber is (C) by Jonas B. Nielsen, (jonasbn) 2008-2010
 
 =head1 LICENSE
 

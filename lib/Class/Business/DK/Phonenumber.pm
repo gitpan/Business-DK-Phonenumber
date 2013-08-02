@@ -1,6 +1,6 @@
 package Class::Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 7846 2012-02-07 09:29:28Z jonasbn $
+# $Id: Phonenumber.pm 6249 2009-06-19 20:37:05Z jonasbn $
 
 use strict;
 use warnings;
