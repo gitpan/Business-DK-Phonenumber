@@ -1,6 +1,6 @@
 package Class::Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 6249 2009-06-19 20:37:05Z jonasbn $
+# $Id$
 
 use strict;
 use warnings;
@@ -9,7 +9,7 @@ use Carp qw(croak);
 use Business::DK::Phonenumber
     qw(validate render validate_template DEFAULT_TEMPLATE DK_PREFIX TRUE FALSE);
 
-$VERSION = '0.01';
+$VERSION = '0.07';
 
 ## no critic (ValuesAndExpressions::ProhibitEmptyQuotes, ValuesAndExpressions::ProhibitInterpolationOfLiterals)
 use overload "" => \&render;

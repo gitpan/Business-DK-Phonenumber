@@ -1,6 +1,6 @@
 package Data::FormValidator::Constraints::Business::DK::Phonenumber;
 
-# $Id: Phonenumber.pm 7778 2011-09-16 20:13:42Z jonasbn $
+# $Id$
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use vars qw($VERSION @EXPORT_OK);
 use Business::DK::Phonenumber qw(validate render);
 use base qw(Exporter);
 
-$VERSION   = '0.01';
+$VERSION   = '0.07';
 @EXPORT_OK = qw(valid_dk_phonenumber match_dk_phonenumber);
 
 use constant VALID   => 1;
