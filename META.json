@@ -42,15 +42,15 @@
    "provides" : {
       "Business::DK::Phonenumber" : {
          "file" : "lib/Business/DK/Phonenumber.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "Class::Business::DK::Phonenumber" : {
          "file" : "lib/Class/Business/DK/Phonenumber.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "Data::FormValidator::Constraints::Business::DK::Phonenumber" : {
          "file" : "lib/Data/FormValidator/Constraints/Business/DK/Phonenumber.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       }
    },
    "release_status" : "stable",
@@ -69,5 +69,5 @@
       "x_projectSite" : "http://logicLAB.jira.com/browse/BDKPHN",
       "x_projectWiki" : "http://logiclab.jira.com/wiki/display/BDKPHN/Home"
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }
