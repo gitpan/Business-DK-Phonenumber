@@ -1,7 +1,5 @@
 package Class::Business::DK::Phonenumber;
 
-# $Id$
-
 use strict;
 use warnings;
 use vars qw($VERSION);
@@ -9,7 +7,7 @@ use Carp qw(croak);
 use Business::DK::Phonenumber
     qw(validate render validate_template DEFAULT_TEMPLATE DK_PREFIX TRUE FALSE);
 
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 ## no critic (ValuesAndExpressions::ProhibitEmptyQuotes, ValuesAndExpressions::ProhibitInterpolationOfLiterals)
 use overload "" => \&render;
@@ -105,28 +103,28 @@ Class::Business::DK::Phonenumber - class to model, validate and format Danish te
 
 =head1 VERSION
 
-This documentation describes version 0.01
+This documentation describes version 0.09
 
 =head1 SYNOPSIS
 
     use Class::Business::DK::Phonenumber;
-    
+
     #Constructor
     my $phonenumber = Class::Business::DK::Phonenumber->new('+45 12345678');
-    
+
     #Brief human readable Danish phonenumber format with international prefix
     print $phonenumber->render('%02d %02d %02d %02d');
-    
+
     #a brief form validating a stripping everything
     my $phonenum =
         Class::Business::DK::Phonenumber->new('+45 12 34 56 78')->render('%d8');
     # 12345678
-    
+
     #for MSISDN like representation with protocol prefix
     my $phonenum =
         Class::Business::DK::Phonenumber->new('+45 12 34 56 78')->render('GSM%d10');
     # GSM4512345678
-    
+
     #for dialing Denmark with international country prefix and international
     #calling code for calling outside Denmark 00
     my $phonenum =
@@ -187,7 +185,7 @@ Valid phone numbers have to abide to the following formatting:
 
 =over
 
-=item * +<international prefix><8 digit phonenumber> 
+=item * +<international prefix><8 digit phonenumber>
 
 =item * <international prefix><8 digit phonenumber>
 
@@ -311,14 +309,10 @@ Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Class-Business-DK-Phonenumber is (C) by Jonas B. Nielsen, (jonasbn) 2008-2009
+Business-DK-Phonenumber and related is (C) by Jonas B. Nielsen, (jonasbn) 2008-2014
 
 =head1 LICENSE
 
-Class-Business-DK-Phonenumber is released under the artistic license
-
-The distribution is licensed under the Artistic License, as specified
-by the Artistic file in the standard perl distribution
-(http://www.perl.com/language/misc/Artistic.html).
+Business-DK-Phonenumber and related is released under the Artistic License 2.0
 
 =cut
